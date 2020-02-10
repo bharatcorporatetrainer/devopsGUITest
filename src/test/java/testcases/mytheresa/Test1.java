@@ -24,8 +24,8 @@ public class Test1 {
   @Test
   public void test1() throws Exception {
     driver.get(baseUrl + "/?gfe_rd=cr&ei=4rKzWKGgC7TT8gfDgZzoCA&gws_rd=ssl");
-    driver.findElement(By.id("lst-ib")).clear();
-    driver.findElement(By.id("lst-ib")).sendKeys("test");
+    //driver.findElement(By.id("lst-ib")).clear();
+   // driver.findElement(By.id("lst-ib")).sendKeys("test");
   }
 
 }
