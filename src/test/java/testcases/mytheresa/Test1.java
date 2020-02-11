@@ -17,15 +17,24 @@ public class Test1 {
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
-    baseUrl = "https://www.google.co.in/";
+    baseUrl = "http://localhost:5588/java-tomcat-maven-example/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
   @Test
   public void test1() throws Exception {
-    driver.get(baseUrl + "/?gfe_rd=cr&ei=4rKzWKGgC7TT8gfDgZzoCA&gws_rd=ssl");
-    //driver.findElement(By.id("lst-ib")).clear();
-   // driver.findElement(By.id("lst-ib")).sendKeys("test");
+    //driver.get(baseUrl + "/?gfe_rd=cr&ei=4rKzWKGgC7TT8gfDgZzoCA&gws_rd=ssl");
+    
+    if (driver.getPageSource().contains("interview Questions")) {
+		System.out.println("Yes test exist");
+	}
+
+	else {
+		System.out.println("does not exist");
+	}
+    
+    
+    
   }
 
 }
