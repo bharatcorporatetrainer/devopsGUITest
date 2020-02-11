@@ -25,7 +25,7 @@ public class Test1 {
   public void test1() throws Exception {
     //driver.get(baseUrl + "/?gfe_rd=cr&ei=4rKzWKGgC7TT8gfDgZzoCA&gws_rd=ssl");
     
-    if (driver.getPageSource().contains("interview Questions")) {
+    if (driver.getPageSource().contains("testbharat")) {
 		System.out.println("Yes test exist");
 	}
 
