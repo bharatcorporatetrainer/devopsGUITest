@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 public class Test1 {
   private WebDriver driver;
-  private String baseUrl;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
+  public String baseUrl;
+  //private boolean acceptNextAlert = true;
+  //private StringBuffer verificationErrors = new StringBuffer();
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
@@ -24,7 +24,7 @@ public class Test1 {
   
   @Test
   public void test1() throws Exception {
-    //driver.get(baseUrl + "/?gfe_rd=cr&ei=4rKzWKGgC7TT8gfDgZzoCA&gws_rd=ssl");
+    driver.get(baseUrl);
     
 	WebElement uname=  driver.findElement(By.name("test"));
 	uname.sendKeys("Bharat");
