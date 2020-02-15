@@ -12,8 +12,7 @@ import org.testng.annotations.Test;
 public class Test1 {
   private WebDriver driver;
   public String baseUrl;
-  //private boolean acceptNextAlert = true;
-  //private StringBuffer verificationErrors = new StringBuffer();
+ 
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
@@ -26,7 +25,7 @@ public class Test1 {
   public void test1() throws Exception {
     driver.get(baseUrl);
     
-	WebElement uname=  driver.findElement(By.name("Failed"));
+	WebElement uname=  driver.findElement(By.name("test"));
 	uname.sendKeys("Bharat");
     if (driver.getPageSource().contains("interview Questions")) {
 		System.out.println("Yes test exist");
