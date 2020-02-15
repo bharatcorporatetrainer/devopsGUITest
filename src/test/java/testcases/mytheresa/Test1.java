@@ -26,7 +26,7 @@ public class Test1 {
   public void test1() throws Exception {
     driver.get(baseUrl);
     
-	WebElement uname=  driver.findElement(By.name("test"));
+	WebElement uname=  driver.findElement(By.name("Failed"));
 	uname.sendKeys("Bharat");
     if (driver.getPageSource().contains("interview Questions")) {
 		System.out.println("Yes test exist");
